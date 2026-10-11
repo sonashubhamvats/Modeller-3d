@@ -17,9 +17,17 @@ The project brings together a practical set of technologies: a web UI, a FastAPI
 
 ## Screenshots
 
-| Pine tree scene | Mountain scene | Rock cluster |
-| --- | --- | --- |
-| ![Generated low-poly pine tree landscape](<assets/Screenshot 2026-10-11 233856.png>) | ![Generated mountain scene](<assets/Screenshot 2026-10-11 234106.png>) | ![Generated rock cluster](<assets/Screenshot 2026-10-11 234439.png>) |
+### Pine tree scene
+
+![Generated low-poly pine tree landscape](<assets/Screenshot 2026-10-11 233856.png>)
+
+### Mountain scene
+
+![Generated mountain scene](<assets/Screenshot 2026-10-11 234106.png>)
+
+### Rock cluster
+
+![Generated rock cluster](<assets/Screenshot 2026-10-11 234439.png>)
 
 ## How RAG helps create the 3D scene
 
