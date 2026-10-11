@@ -157,5 +157,3 @@ The generation endpoint accepts JSON with `prompt` and `user_id`. Prompts are li
 ## Extending the project
 
 To grow beyond landscape models, add relevant design references and Blender scene examples under `training_data/prompts/` and `training_data/scripts/`, organized by scenario or category. Rebuild the RAG index, add representative queries and expected filenames to the corresponding golden set, and run the retrieval evaluator. The current generator is landscape-oriented; broader content is best introduced alongside scenario-appropriate examples and evaluation queries.
-#   M o d e l l e r - 3 d  
- 
