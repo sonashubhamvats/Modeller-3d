@@ -1,0 +1,2 @@
+Alpine Glacial Lake Patch
+Create a compact landscape diorama with a recessed circular lake and a rocky shore ring. Use deep teal-blue water (#005F73) with a glossy surface (roughness around 0.05); suggest clarity and depth through color rather than relying on transparency alone. Surround the water with irregular grey rock fragments and make the basin edge visibly lower than the shore.

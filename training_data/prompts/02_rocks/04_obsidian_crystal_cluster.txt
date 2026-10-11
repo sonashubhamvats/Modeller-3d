@@ -1,0 +1,2 @@
+Obsidian Crystal Cluster
+Create a compact cluster of sharp, angular obsidian crystals protruding upward at varied angles from a small rocky base. Use jet black (#0B0C0E) with low roughness around 0.1 and strong specular highlights to suggest polished volcanic glass. Give each crystal distinct planar facets and a pointed termination, while avoiding transparent or excessively thin geometry.

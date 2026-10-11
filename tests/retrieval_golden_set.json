@@ -1,0 +1,152 @@
+[
+  {
+    "category": "01_mountains",
+    "query": "Build a steep angular snowy summit with exposed dark grey rock.",
+    "expected_filenames": ["01_mountains/01_snow_capped_alpine_peak.txt"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "Make a flat-topped desert butte with red and tan horizontal rock layers.",
+    "expected_filenames": ["01_mountains/02_desert_sandstone_mesa.txt"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "A cliff ridge made from tall polygonal dark volcanic columns.",
+    "expected_filenames": ["01_mountains/03_basalt_column_ridge.txt"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "Create a black volcanic cone with a sunken glowing lava bowl at its summit.",
+    "expected_filenames": ["01_mountains/04_volcanic_crater_peak.txt"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "A narrow eroded limestone spire with green-grey stone and a little ground fog.",
+    "expected_filenames": ["01_mountains/05_misty_karst_pinnacle.txt"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "One rounded grey rock, shaped by ice, with a flat spot underneath.",
+    "expected_filenames": ["02_rocks/01_glacial_granite_boulder.txt"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "Several smooth slate pebbles with patches of green growth on top.",
+    "expected_filenames": ["02_rocks/02_mossy_river_pebble_cluster.txt"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "A weathered red stone formation with a large natural opening through it.",
+    "expected_filenames": ["02_rocks/03_desert_natural_arch.txt"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "A group of shiny black glass-like shards jutting out of a base.",
+    "expected_filenames": ["02_rocks/04_obsidian_crystal_cluster.txt"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "A pale coastal rock pillar with horizontal shelves and eroded notches near sea level.",
+    "expected_filenames": ["02_rocks/05_limestone_sea_stack.txt"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "A simple evergreen with three separate triangular layers and a thin trunk.",
+    "expected_filenames": ["03_vegetation/01_low_poly_pine_tree.txt"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "An old twisted tree with orange autumn leaf clusters at the ends of its branches.",
+    "expected_filenames": ["03_vegetation/02_gnarled_autumn_oak.txt"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "A desert succulent with a tall ribbed stem and two raised arms.",
+    "expected_filenames": ["03_vegetation/03_desert_saguaro_cactus.txt"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "Three glowing blue fantasy fungi growing from a green patch.",
+    "expected_filenames": ["03_vegetation/04_bioluminescent_mushrooms.txt"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "A tree with a leaning trunk and long leafy branches hanging toward the ground.",
+    "expected_filenames": ["03_vegetation/05_weeping_willow.txt"]
+  },
+  {
+    "category": "04_ground",
+    "query": "Dry clay terrain broken into plates separated by deep dark cracks.",
+    "expected_filenames": ["04_ground/01_cracked_desert_mud.txt"]
+  },
+  {
+    "category": "04_ground",
+    "query": "A miniature woodland base with dark earth, moss hummocks, pebbles and pine debris.",
+    "expected_filenames": ["04_ground/02_lush_forest_floor.txt"]
+  },
+  {
+    "category": "04_ground",
+    "query": "A black ash-covered volcanic patch scattered with porous red-speckled cinders.",
+    "expected_filenames": ["04_ground/03_volcanic_ash_cinder_ground.txt"]
+  },
+  {
+    "category": "04_ground",
+    "query": "Frozen arctic soil with dull green plants and bright patches of frost.",
+    "expected_filenames": ["04_ground/04_tundra_permafrost_ground.txt"]
+  },
+  {
+    "category": "04_ground",
+    "query": "A golden sand hill with fine wind-shaped ripples across its ridge.",
+    "expected_filenames": ["04_ground/05_wind_rippled_sand_dune.txt"]
+  },
+  {
+    "category": "05_water",
+    "query": "A quiet teal lake filling a shallow rocky basin high in the mountains.",
+    "expected_filenames": ["05_water/01_alpine_glacial_lake.txt"]
+  },
+  {
+    "category": "05_water",
+    "query": "A stream cascading down a few rocky steps with white foam along its flow.",
+    "expected_filenames": ["05_water/02_rushing_waterfall_stream.txt"]
+  },
+  {
+    "category": "05_water",
+    "query": "A murky marsh pool with reeds sticking up and floating round leaves.",
+    "expected_filenames": ["05_water/03_murky_swamp_wetland.txt"]
+  },
+  {
+    "category": "05_water",
+    "query": "A sequence of cream-colored mineral pools with turquoise water at different heights.",
+    "expected_filenames": ["05_water/04_terraced_hot_spring.txt"]
+  },
+  {
+    "category": "05_water",
+    "query": "A curved strip of blue ocean meeting foam and dark wet beach sand.",
+    "expected_filenames": ["05_water/05_ocean_shoreline.txt"]
+  },
+  {
+    "category": "06_structures",
+    "query": "A damaged round stone lookout with ivy climbing its broken walls.",
+    "expected_filenames": ["06_structures/01_ruined_stone_watchtower.txt"]
+  },
+  {
+    "category": "06_structures",
+    "query": "A short rustic boundary fence built from rough split logs along a slope.",
+    "expected_filenames": ["06_structures/02_split_rail_fence.txt"]
+  },
+  {
+    "category": "06_structures",
+    "query": "A curving footpath paved with rounded grey stones set into soil.",
+    "expected_filenames": ["06_structures/03_cobblestone_pathway.txt"]
+  },
+  {
+    "category": "06_structures",
+    "query": "Three huge ancient blocks form a freestanding lichen-covered doorway.",
+    "expected_filenames": ["06_structures/04_ancient_stone_arch.txt"]
+  },
+  {
+    "category": "06_structures",
+    "query": "A small wooden span with a bowed deck, railings and visible metal bolts.",
+    "expected_filenames": ["06_structures/05_timber_footbridge.txt"]
+  }
+]

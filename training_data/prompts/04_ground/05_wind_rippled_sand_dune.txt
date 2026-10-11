@@ -1,0 +1,2 @@
+Wind-Rippled Desert Sand Dune
+Create a smooth, standalone undulating sand-dune surface with a raised crest and fine repeated wind-ripple ridges that follow the dune's contour. Use warm yellow-gold sand (#E8D3A7, roughness 0.8) with soft, natural shading and slight variation between ridge and trough surfaces. Keep the ripples subtle enough that the larger dune shape remains dominant.

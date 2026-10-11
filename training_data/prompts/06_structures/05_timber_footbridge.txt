@@ -1,0 +1,2 @@
+Arched Timber Footbridge
+Create a small arched wooden footbridge spanning a narrow stream, with a gently raised plank deck, visible support posts, and simple side rails. Use medium oak-stained wood (#8B5A2B, roughness 0.7) and add small dark iron fastener rivets (#1C1C1C) at the post and rail joints. Keep the arch, deck planks, and stream opening readable from a three-quarter view.

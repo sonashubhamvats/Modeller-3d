@@ -1,0 +1,2 @@
+Cracked Desert Mud Floor
+Create a flat, standalone patch of sun-baked desert mud divided into irregular polygonal plates by deep, dark fissures. Use tan-brown clay (#D2B48C, roughness 0.95) for raised plate surfaces and dark recessed gaps to create clear depth between them. Keep the patch low and compact, with visible cracks across the full surface and an uneven outer edge.

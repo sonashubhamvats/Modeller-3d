@@ -1,0 +1,2 @@
+Cobblestone Pathway Section
+Create a short winding pathway patch made of individual rounded cobblestones embedded in a dark soil bed. Vary the stones between slate greys (#555555) and use dark dirt (#3A2E2B) in the visible gaps. Keep stones slightly uneven in height and tightly fitted enough that the path reads as walkable rather than as scattered loose rocks.

@@ -1,0 +1,2 @@
+Low-Poly Coniferous Pine Tree
+Create a stylized standalone low-poly pine tree with three stacked seven-sided cone foliage tiers that decrease in radius toward the top. Use deep emerald green foliage (#1B4D3E, roughness 0.8) and a narrow dark-brown trunk (#4A2E19) with a simple faceted, eight-sided form. Keep the foliage tiers separated enough to remain distinct and center the trunk beneath the canopy.

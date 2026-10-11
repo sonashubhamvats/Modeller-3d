@@ -1,0 +1,2 @@
+Desert Sandstone Mesa
+Create a standalone low-poly desert mesa with a broad, flat summit and several distinct stepped terraces. Show horizontal sediment strata as alternating blocky bands, transitioning from warm reddish-orange terracotta (#C85A32) near the base to pale tan sand (#E6B87D) across the upper cap. Use a matte finish with roughness around 0.9 and make the layered profile legible at a small preview scale.

@@ -1,0 +1,2 @@
+Volcanic Crater Peak
+Create a standalone conical volcanic mountain with a clearly hollowed summit basin and a visible crater floor. Use jagged dark obsidian and ash-black rock (#18191A), with irregular angular ridges descending toward the crater. Place a distinct orange-red magma pool (#FF3D00) at the bottom and give it a strong emissive appearance; keep the pool inside the crater so it reads clearly from an elevated view.

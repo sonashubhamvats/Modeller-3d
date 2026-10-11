@@ -1,0 +1,2 @@
+Glacial Granite Boulder
+Create one standalone, asymmetric low-poly granite boulder with a smoothly rounded overall silhouette, subtle pitting, and a slightly flattened underside so it appears stable on the ground. Use speckled medium grey (#808588, roughness 0.75) with restrained small color variations across facets. Avoid sharp crystal-like spikes; the form should suggest a rock rounded by glacial movement.

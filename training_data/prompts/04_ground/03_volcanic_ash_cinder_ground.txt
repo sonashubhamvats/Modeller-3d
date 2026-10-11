@@ -1,0 +1,2 @@
+Volcanic Ash and Cinder Ground
+Create a low, standalone patch of dark volcanic ash with scattered embedded porous scoria stones. Use matte black and dark ash-grey materials (#1A1A1A, roughness 0.98) across the ground and rocks, with sparse subtle red iron-oxide speckles. Vary the cinder sizes and keep their lower portions embedded so they appear to emerge naturally from the ash.

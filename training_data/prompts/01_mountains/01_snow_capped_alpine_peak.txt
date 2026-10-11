@@ -1,0 +1,2 @@
+Snow-Capped Alpine Peak
+Create a standalone low-poly alpine mountain with a tall, sharply terminating summit and strongly faceted, steep granite faces. Use dark granite grey (#3C3D42, roughness 0.8) for exposed rock and a thick, bright snow cap (#F0F4F8, roughness 0.4) covering the summit and upper ledges. Keep the silhouette dramatic and clearly readable from all sides; make the snow-rock boundary follow angular terrain contours.

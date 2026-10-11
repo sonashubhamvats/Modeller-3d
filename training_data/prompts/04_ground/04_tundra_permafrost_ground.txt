@@ -1,0 +1,2 @@
+Tundra Permafrost Ground
+Create a compact frost-dusted tundra ground patch with low grass mounds, frozen soil, and irregular frost patches. Use muted olive-drab moss (#6B705C) for the terrain and icy white-blue frost (#E0ECEF, roughness 0.3) in scattered areas. Keep the surface gently uneven and make the contrasting frost and soil regions easy to distinguish.

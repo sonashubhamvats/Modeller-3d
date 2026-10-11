@@ -1,0 +1,152 @@
+[
+  {
+    "category": "01_mountains",
+    "query": "Generate a Blender scene script for a sharp snowy mountain with faceted grey rock.",
+    "expected_filenames": ["01_mountains/01_snow_capped_alpine_peak.py"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "Write bpy code for a terraced flat summit mesa in a red desert.",
+    "expected_filenames": ["01_mountains/02_desert_sandstone_mesa.py"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "I need a Blender script that builds a jagged row of hexagonal basalt columns.",
+    "expected_filenames": ["01_mountains/03_basalt_column_ridge.py"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "Create python bpy code for a volcano with a crater and glowing lava pool.",
+    "expected_filenames": ["01_mountains/04_volcanic_crater_peak.py"]
+  },
+  {
+    "category": "01_mountains",
+    "query": "Blender example to make a thin eroded limestone pinnacle with moss.",
+    "expected_filenames": ["01_mountains/05_misty_karst_pinnacle.py"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "A bpy example for one rounded glacial granite rock.",
+    "expected_filenames": ["02_rocks/01_glacial_granite_boulder.py"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "Generate several slate river pebbles and place patches of moss on them.",
+    "expected_filenames": ["02_rocks/02_mossy_river_pebble_cluster.py"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "Python script for a red sandstone natural arch with a hole through it.",
+    "expected_filenames": ["02_rocks/03_desert_natural_arch.py"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "How can I procedurally create glossy black obsidian shards in Blender?",
+    "expected_filenames": ["02_rocks/04_obsidian_crystal_cluster.py"]
+  },
+  {
+    "category": "02_rocks",
+    "query": "Build a pale layered seaside cliff with eroded hollows at the bottom.",
+    "expected_filenames": ["02_rocks/05_limestone_sea_stack.py"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "Script a low-poly fir with three separate cone-shaped green tiers.",
+    "expected_filenames": ["03_vegetation/01_low_poly_pine_tree.py"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "Make a gnarled oak with orange leaf clusters and branching limbs.",
+    "expected_filenames": ["03_vegetation/02_gnarled_autumn_oak.py"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "Bpy code for a ribbed desert cactus with two raised arms.",
+    "expected_filenames": ["03_vegetation/03_desert_saguaro_cactus.py"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "Create several fantasy mushrooms with luminous cyan caps and pale stems.",
+    "expected_filenames": ["03_vegetation/04_bioluminescent_mushrooms.py"]
+  },
+  {
+    "category": "03_vegetation",
+    "query": "A Blender script that creates a weeping tree with long hanging foliage.",
+    "expected_filenames": ["03_vegetation/05_weeping_willow.py"]
+  },
+  {
+    "category": "04_ground",
+    "query": "Procedurally model a dried clay tile separated by polygon cracks.",
+    "expected_filenames": ["04_ground/01_cracked_desert_mud.py"]
+  },
+  {
+    "category": "04_ground",
+    "query": "Build a forest diorama base with loam, moss bumps, and small stones.",
+    "expected_filenames": ["04_ground/02_lush_forest_floor.py"]
+  },
+  {
+    "category": "04_ground",
+    "query": "Make a black volcanic cinder patch with porous rocks and rusty flecks.",
+    "expected_filenames": ["04_ground/03_volcanic_ash_cinder_ground.py"]
+  },
+  {
+    "category": "04_ground",
+    "query": "Bpy example for a frozen tundra terrain tile with grass and ice patches.",
+    "expected_filenames": ["04_ground/04_tundra_permafrost_ground.py"]
+  },
+  {
+    "category": "04_ground",
+    "query": "A small golden dune with repeated wind ripples on its surface.",
+    "expected_filenames": ["04_ground/05_wind_rippled_sand_dune.py"]
+  },
+  {
+    "category": "05_water",
+    "query": "Python code for a mountain lake inset into a rocky circular shore.",
+    "expected_filenames": ["05_water/01_alpine_glacial_lake.py"]
+  },
+  {
+    "category": "05_water",
+    "query": "Build a cascading stream with white foam over dark rock steps.",
+    "expected_filenames": ["05_water/02_rushing_waterfall_stream.py"]
+  },
+  {
+    "category": "05_water",
+    "query": "Create a stagnant green marsh with reeds and floating lily pads.",
+    "expected_filenames": ["05_water/03_murky_swamp_wetland.py"]
+  },
+  {
+    "category": "05_water",
+    "query": "A Blender model of stepped cream mineral pools filled with turquoise water.",
+    "expected_filenames": ["05_water/04_terraced_hot_spring.py"]
+  },
+  {
+    "category": "05_water",
+    "query": "Make a curved beach model where blue waves meet pale foam and wet sand.",
+    "expected_filenames": ["05_water/05_ocean_shoreline.py"]
+  },
+  {
+    "category": "06_structures",
+    "query": "Script a broken cylindrical stone lookout tower with ivy on it.",
+    "expected_filenames": ["06_structures/01_ruined_stone_watchtower.py"]
+  },
+  {
+    "category": "06_structures",
+    "query": "Generate a sloped rustic fence from rough horizontal split logs.",
+    "expected_filenames": ["06_structures/02_split_rail_fence.py"]
+  },
+  {
+    "category": "06_structures",
+    "query": "Bpy code for a curving garden walkway made from individual rounded stones.",
+    "expected_filenames": ["06_structures/03_cobblestone_pathway.py"]
+  },
+  {
+    "category": "06_structures",
+    "query": "Create an ancient doorway from three huge weathered blocks with lichen.",
+    "expected_filenames": ["06_structures/04_ancient_stone_arch.py"]
+  },
+  {
+    "category": "06_structures",
+    "query": "A small arched wooden bridge with deck planks, rails, and metal bolts.",
+    "expected_filenames": ["06_structures/05_timber_footbridge.py"]
+  }
+]

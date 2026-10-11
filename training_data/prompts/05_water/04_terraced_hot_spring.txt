@@ -1,0 +1,2 @@
+Stepped Terraced Hot Spring
+Create a compact set of stepped limestone basins connected by small spillways. Use pale turquoise water (#48CAE4) inside the pools and white-cream travertine walls (#F4F1DE, roughness 0.6) around them. Make each terrace height and basin rim distinct, and keep the pools contained within the stone structure.

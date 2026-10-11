@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modeller 3D</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✳</span><span>Modeller 3D</span></div>
+      <span class="topbar-note">A little imagination, made tangible.</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">Your 3D creation studio</p>
+      <h1>Dream it.<br>Bring it to life.</h1>
+      <p class="intro-copy">Describe a scene and watch your idea take shape as an interactive 3D model.</p>
+    </section>
+
+    <div class="workspace">
+      <section class="form-panel">
+        <h2 class="section-heading">Create a model</h2>
+        <p class="section-copy">Give your scene a prompt. You can rotate and explore the result once it’s ready.</p>
+
+        <label class="field">
+          <span class="field-label">User ID</span>
+          <input type="text" id="userId" value="user_demo_123" />
+        </label>
+
+        <label class="field">
+          <span class="field-label">What should we create?</span>
+          <input type="text" id="prompt" maxlength="500" placeholder="A low poly pine tree on a rocky snow hill" />
+        </label>
+
+        <button onclick="generateModel()">Generate 3D model</button>
+        <button id="downloadModel" type="button" hidden>Download GLB</button>
+        <p id="statusMsg" class="status-box" role="status" aria-live="polite">Your generated model will appear here.</p>
+      </section>
+      
+      <section class="viewer-panel" aria-label="3D model preview">
+        <div class="viewer-topline">
+          <span class="viewer-label">Live preview</span>
+          <span class="viewer-hint">Drag to rotate · Scroll to zoom</span>
+        </div>
+        <div class="viewer-empty">
+          <div class="viewer-empty-icon">◇</div>
+          <strong>Your next idea, in 3D</strong>
+          <span>Generate a model to see it appear here. Then drag to explore every angle.</span>
+        </div>
+        <model-viewer id="viewer" auto-rotate camera-controls></model-viewer>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    async function generateModel() {
+      const prompt = document.getElementById("prompt").value;
+      const userId = document.getElementById("userId").value;
+      const statusMsg = document.getElementById("statusMsg");
+      const downloadButton = document.getElementById("downloadModel");
+      const viewerEmpty = document.querySelector(".viewer-empty");
+      downloadButton.hidden = true;
+
+      if(!prompt) return alert("Please enter a prompt!");
+
+      statusMsg.innerText = "Submitting job to Azure...";
+
+      // Submit job
+      const res = await fetch("http://localhost:8000/api/v1/generate/landscape-rag", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: prompt, user_id: userId })
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        statusMsg.innerText = data.detail || "The prompt was rejected.";
+        return;
+      }
+      const jobId = data.job_id;
+
+      // Poll Azure Cosmos DB status via API
+      const interval = setInterval(async () => {
+        const pollRes = await fetch(`http://localhost:8000/api/v1/jobs/${jobId}?user_id=${userId}`);
+        const job = await pollRes.json();
+
+        statusMsg.innerText = `Status: ${job.status} (${job.stage})`;
+
+        if (job.status === "COMPLETED") {
+          clearInterval(interval);
+          const viewer = document.getElementById("viewer");
+          const onModelLoad = () => {
+            statusMsg.innerText = "Model loaded from Azure Blob Storage!";
+            downloadButton.hidden = false;
+            viewerEmpty.hidden = true;
+          };
+          const onModelError = (event) => {
+            console.error("Model viewer failed to load the GLB:", event.detail);
+            downloadButton.hidden = true;
+            viewerEmpty.hidden = false;
+            statusMsg.innerText =
+              "The GLB was uploaded, but the viewer could not load it. Check the blob URL, SAS expiry, and Azure Storage CORS settings.";
+          };
+
+          viewerEmpty.hidden = true;
+          viewer.addEventListener("load", onModelLoad, { once: true });
+          viewer.addEventListener("error", onModelError, { once: true });
+          viewer.src = job.model_url;
+          statusMsg.innerText = "Model uploaded. Loading it in the viewer...";
+        } else if (job.status === "FAILED") {
+          clearInterval(interval);
+          statusMsg.innerText = "Generation Failed: " + job.error;
+        }
+      }, 2000);
+    }
+
+    document.getElementById("downloadModel").addEventListener("click", async () => {
+      const viewer = document.getElementById("viewer");
+      const statusMsg = document.getElementById("statusMsg");
+      const downloadButton = document.getElementById("downloadModel");
+      downloadButton.disabled = true;
+
+      try {
+        const response = await fetch(viewer.src);
+        if (!response.ok) {
+          throw new Error(`Download failed with HTTP ${response.status}`);
+        }
+
+        const modelBlob = await response.blob();
+        const downloadUrl = URL.createObjectURL(modelBlob);
+        const link = document.createElement("a");
+        link.href = downloadUrl;
+        link.download = "model.glb";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+        statusMsg.innerText = "Model downloaded.";
+      } catch (error) {
+        console.error("Failed to download the GLB:", error);
+        statusMsg.innerText =
+          "Could not download the model. Check the blob URL, SAS expiry, and Azure Storage CORS settings.";
+      } finally {
+        downloadButton.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

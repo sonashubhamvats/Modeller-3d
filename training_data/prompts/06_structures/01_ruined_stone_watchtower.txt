@@ -1,0 +1,2 @@
+Ruined Stone Watchtower
+Create a standalone cylindrical stone watchtower segment with a broken, jagged top rim and several missing masonry cavities. Use weathered grey stone blocks (#6C757D, roughness 0.85) with visible irregular block courses, and add sparse climbing ivy in deep green (#2D5A27). Keep the interior openings dark and the damaged top silhouette clearly visible.
