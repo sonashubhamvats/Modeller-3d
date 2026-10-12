@@ -77,7 +77,7 @@ Other services are still used: an Azure OpenAI deployment generates Blender Pyth
 ### Prerequisites
 
 - Windows
-- Python 3.11 (the development environment used for the project)
+- Python
 - Blender 5.2
 - Azure OpenAI deployment with access to the Responses API
 - Azure Storage account and Azure Cosmos DB account
@@ -87,7 +87,7 @@ Other services are still used: an Azure OpenAI deployment generates Blender Pyth
 From the project root, create and activate a virtual environment, then install the packages used by the backend and RAG tooling:
 
 ```powershell
-py -3.11 -m venv .venv
+py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install fastapi uvicorn pydantic openai chromadb sentence-transformers azure-storage-blob azure-cosmos
 ```
